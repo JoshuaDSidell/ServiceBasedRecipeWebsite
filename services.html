@@ -1,0 +1,408 @@
+<!-- ToDo List -->
+<!-- add JS form functionality to forms -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="res/style.main.css">
+        
+    <link rel="stylesheet" href="/flexboxgrid-6.3.1/css/flexboxgrid.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="services.css">
+    <script src="https://kit.fontawesome.com/721adb4787.js" crossorigin="anonymous"></script>
+    
+
+</head>
+<body class="main-content">
+    <!-- Header Nav Bar -->
+    <header id="header" class="top">
+        <div class="container">
+            <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+                <!-- Recipes Icon -->
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                    <div class="container-left">
+                        <h3 id="left-icon">
+                            <button type="button" class="left-icon">
+                                <a href="#" data-drawer-trigger aria-controls="drawer-name-left" aria-expanded="false"><i class="fas fa-bars"> Recipes</i></a>    
+                            </button>
+                        </h3>
+                    </div>
+                </div>
+                <!-- Nav Page Links -->
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <nav id="navbar">
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li class="current"><a href="">Services</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="interactive.html">Interactive</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Account Icon -->
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                    <div id="right-icon">
+                        <h3 id="right-icon">
+                            <button type="button" class="right-icon">
+                                <a href="#" data-drawer-trigger aria-controls="drawer-name" aria-expanded="false"><i class="fas fa-user-alt"> Account</i></a>    
+                            </button>
+                        </h3> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Form -->
+    <section id="serviceLinks">
+        <button class="tabBar" onclick="openPage('Private', this, 'rgb(255, 101, 101)')" id="defaultService">Private Chef</button>
+        <button class="tabBar" onclick="openPage('Direct', this, 'rgb(63, 170, 63)')" >Private Call</button>
+        <button class="tabBar" onclick="openPage('Contact', this, 'rgb(97, 97, 253)')">Contact</button>
+        <button class="tabBar" onclick="openPage('Quote', this, 'rgb(255, 197, 88)')">Special Quote</button>
+        <div id="Private" class="serviceContent">
+            <div class="serviceContainer">
+                <h3>In need of a private chef for a simple meal or larger event? Let us know what you need and get a free quote!</h3>
+                <p>Estimates are not exact amounts and subject to change based on needs/alterations</p>
+                <form action="" class="privChef">
+                    <select>
+                        <option value="breakfast">breakfast</option>
+                        <option value="brunch">brunch</option>
+                        <option value="lunch">lunch</option>
+                        <option value="dinner">dinner</option>
+                        <option value="event">event</option>
+                    </select>
+                    <label for=""> What type of meal? 
+                    </label>
+                    <div class="tooltip"><i class="far fa-question-circle"></i>
+                        <span class="tooltiptext">*Events are: corporate, catering, gatherings with greater than 4 adults | 6 children / 8 adults.</span>
+                      </div>
+                    
+                    <br>
+                    <p>Person(s) we will serve?</p>
+                    <input type="number" min="0" max="99" value="1" >
+                    <label for="">Adults </label>
+                    <input type="number" min="0" max="99" value="0">
+                    <label for="">Children</label>
+                    <p>Please specify the type of entrees you need</p>
+                    <input type="checkbox">
+                    <label for="">Appetizer</label>
+                    <input type="checkbox">
+                    <label for="">Salad / Soup</label>
+                    <input type="checkbox">
+                    <label for="">Specialty Sides</label>
+                    <input type="checkbox">
+                    <label for="">Main Entre</label>
+                    <input type="checkbox">
+                    <label for="">Desert</label>
+
+                    <p>What date and time do you require? Times must be at least a week in advance!</p>
+                    <input type="date" value="">
+                    <input type="time">
+
+                    <p>Please let us know more about the cooking services our chef can provide</p>
+                    <textarea name="" id="" cols="75" rows="10" placeholder="Please enter the specifics here..."></textarea>
+                    <br>
+                    <p>Please enter your email and/or phone number.</p>
+                    <input type="email" placeholder="janedoe@email.com" id="privChefEmail" required>
+                    <input type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <br>
+                    <p>Please be sure to have at least 1 adult/child selected, an entre and your email before sumbitting!</p>
+                    <input type="button" value="Submit" onclick="serviceSubmit()" id="privChefSubmit">
+                    
+                </form>
+            </div>
+        </div>
+        <div id="Direct" class="serviceContent">
+            <h3>Consulting</h3>
+            <p>Some news this fine day!</p> 
+        </div>
+        <div id="Contact" class="serviceContent">
+            <h3>Contact</h3>
+            <p>Get in touch, or swing by for a cup of coffee.</p>
+        </div>
+        <div id="Quote" class="serviceContent">
+            <h3>About</h3>
+            <p>Who we are and what we do.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    
+
+                    
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+            <div class="row center-xs center-sm start-md start-lg">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <!-- Change some items to p instead of li if they don't use icons -->
+                    <div id="footer-about">
+                        <h4>
+                            About Us
+                        </h4>
+                        <ul id="footer-about-list">
+                            <li><i class="fas fa-mobile-alt">   888-888-8888</i></li>
+                            <li><i class="fas fa-at">  rubadubdub@tubnetscape.net</i></li>
+                            <li><i class="fas fa-map-marked-alt">  Union City, CA</i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <div id="footer-faq">
+                        <h4>
+                            Questions? FAQ!
+                        </h4>
+                        <ul id="footer-faq-list">
+                            <p>Why use (business name)?</p>
+                            <p>What kind of clients do we have?</p>
+                            <p>How much are your services?</p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <div id="footer-service">
+                        <h4>
+                            Services
+                        </h4>
+                        <ul id="footer-service-list">
+                            <p>Web Development / Design</p>
+                            <p>Backend and Algorithmys</p>
+                            <p>Assistance on current project</p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <div id="footer-sub&media">
+                        <h4>
+                            Subcribe & Social Media
+                        </h4>
+                        <ul id="footer-sub&media-list">
+                            <p><i class="fab fa-github-square"> Check the latest project on GitHub!</i></p>
+                            <p><i class="fab fa-linkedin"> See my experience on LinkedIn</i> </p> 
+                            <p id="subby">Subscribe to our Newsletter!</p>
+                            <form action="">
+                            <input type="text" name="email" placeholder="Enter Email">
+                            <button type="submit" name="button">
+                                Submit
+                            </button>
+                            </form>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Copyright (may put social media icons here) -->
+    <footer id="copyright">
+        <div class="container">
+            <div class="row center-xs center-sm center-md center-lg">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <p id="copyright-p">Copyright &copy; 2020 | Joshua Sidell</p>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <p>
+                    <span>Check out our Social Media! | <i class="fab fa-facebook-square"></i> | <i class="fab fa-twitter-square"></i> | <i class="fab fa-instagram-square"></i> | 
+                </p> </span>
+              </div>
+            </div>
+          </div>
+    </footer>
+    <!-- Fixed Icons -->
+    <section>
+        <div id="return-top">
+            <a href="#top"><img src="Images/iconfinder_arrow-up-01_186407.png" alt=""></a>
+        </div>
+    </section>
+    <!-- Right Menu -->
+    <section class="drawer" id="drawer-name" data-drawer-target>
+        <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+        <div class="drawer__wrapper">
+          <div class="drawer__header">
+            <div class="drawer__title" id="drawer__title-quote">
+                "A Master of Cooking is a Master of Love" - J.W. Butcher
+            </div>
+            <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
+          </div>
+          <div class="drawer__content">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen"><i class="fas fa-home"></i></button>
+                <button class="tablinks" onclick="openTab(event, 'Fav')"><i class="fas fa-star"></i></button>
+                <button class="tablinks" onclick="openTab(event, 'Settings')"><i class="fas fa-cogs"></i></button>
+              </div>
+
+              <div id="Home" class="tabcontent">
+                    <div class="home-container">
+                        <div class="bg1">
+                            <h2>Recipe of the Month</h2>
+                            <p>Tandoori Chicken</p>
+                          </div>
+                          <div class="bg1">
+                            <h2><i class="fas fa-history"></i></h2>
+                            <p>History</p>
+                            <p>Avocado Toast</p>
+                          </div>
+                          <div class="bg2" id="left-border">
+                            <h2><i class="fas fa-play"></i></h2>
+                            <p>Resume</p>
+                            <p>Chicken Soup</p>
+                          </div>
+                          <div class="bg1">
+                            <h2>76F&deg; <span>
+                                / 15% Humid</span></h2>
+                            <p>No need to adjust oven or dough recipe!</p>
+                          </div>
+                          <div class="bg1">
+                            <h2><i class="far fa-envelope"></i></h2>
+                            <p>1 Unread</p>
+                          </div>
+                          <div class="bg2" id="left-border">
+                            <h2><i class="far fa-comments"></i></h2>
+                            <p>2 Comment Replies</p>
+                          </div>
+                          <div class="bg1">
+                            <h2>Ask the Chef</h2>
+                            <p>The Chef is always here to help!</p>
+                          </div>
+                          <!-- <div class="bg1">
+                            <h2>28 <span>%</span></h2>
+                            <p>Fat Percentage</p>
+                          </div>
+                          <div class="bg2">
+                            <h2>118 <span>mgdl</span></h2>
+                            <p>Blood Glucose</p>
+                          </div>
+                          <div class="bg2">
+                            <h2>680 <span>kcal</span></h2>
+                            <p>AVG Consumption</p>
+                          </div> -->
+                    </div>
+                </div>
+              <div id="Fav" class="tabcontent">
+                <form action="">
+                    <input type="text" name="text" placeholder="Enter Recipe!">
+                    <select id="fav__sort">
+                        <option value="newest">newest</option>
+                        <option value="oldest">oldest</option>
+                        <option value="level">level</option>
+                        <option value="length">length</option>
+                      </select>
+                    <button type="submit" name="button">
+                    Search
+                    </button>
+                </form>
+                <h4>
+                    Boopie Pasta
+                </h4>
+                <p>
+                    <img src="Images/Spicy-Garlic-Butter-Pasta-1.jpg" alt="Food Image">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut fuga suscipit error deserunt dolor pariatur temporibus cumque dicta
+                </p>
+                <h4>
+                    Mike and Ike Sauce
+                </h4>
+                <p>
+                    <img src="Images/Spicy-Garlic-Butter-Pasta-1.jpg" alt="Food Image">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut fuga suscipit error deserunt dolor pariatur temporibus cumque dicta
+                </p> 
+              </div>
+              
+              <div id="Settings" class="tabcontent">
+                <h3>Settings</h3>
+                <p>List of settings, privacy, account, etc.</p>
+              </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Left Menu -->
+    <section class="drawer drawer--left" id="drawer-name-left" data-drawer-target>
+        <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+        <div class="drawer__wrapper">
+          <div class="drawer__header">
+            <div class="drawer__title">
+                <form action="">
+                    Sample Text
+                    <input type="text" name="text" placeholder="Enter Recipe!">
+                    <button type="submit" name="button">
+                    Search
+                    </button>
+                </form>
+            </div>
+            <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
+          </div>
+          <div class="drawer__content">
+            <h2>
+                New Recipes!
+            </h2>
+            <h4>
+                Boopie Pasta
+            </h4>
+            <p>
+                <img src="Images/Spicy-Garlic-Butter-Pasta-1.jpg" alt="Food Image">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut fuga suscipit error deserunt dolor pariatur temporibus cumque dicta nisi corrupti esse harum a minima itaque, libero maiores consectetur inventore!
+            </p>
+            <h4>
+                Mike and Ike Sauce
+            </h4>
+            <p>
+                <img src="Images/Spicy-Garlic-Butter-Pasta-1.jpg" alt="Food Image">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut fuga suscipit error deserunt dolor pariatur temporibus cumque dicta nisi corrupti esse harum a minima itaque, libero maiores consectetur inventore!
+            </p>
+            <br>
+            <h2>
+                Featured Recipes!
+            </h2>
+            <h4>
+                TiddleWave Cake
+            </h4>
+            <p>
+                <img src="Images/Spicy-Garlic-Butter-Pasta-1.jpg" alt="Food Image">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut fuga suscipit error deserunt dolor pariatur temporibus cumque dicta nisi corrupti esse harum a minima itaque, libero maiores consectetur inventore!
+            </p>
+            <h4>
+                Sheckles and Magic Bread
+            </h4>
+            <p>
+                <img src="Images/Spicy-Garlic-Butter-Pasta-1.jpg" alt="Food Image">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut fuga suscipit error deserunt dolor pariatur temporibus cumque dicta nisi corrupti esse harum a minima itaque, libero maiores consectetur inventore!
+            </p>
+          </div>
+        </div>
+    </section>
+
+    
+    <script src="controller.js"></script>
+    <script src="res/script.main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</body>
+</html>
+
+
+<!-- Template for section addition  -->
+
+  <!--  <section id="">
+    <div class="container">
+        <div class="row center-xs center-sm center-md center-lg">
+            <div class="col-xs col-sm col-md col-lg">
+                
+            </div>
+        </div>
+    </div>
+</section> -->    
+<!-- <section>
+        <div id="sidebar__container-left" class="sidebar__container-left">
+            <div class="box__left">
+                <h3>
+                    test of box
+                </h3>
+            </div>
+        </div>
+    </section> -->
