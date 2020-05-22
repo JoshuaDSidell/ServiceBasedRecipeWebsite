@@ -236,6 +236,7 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
     /* background: url(Images/85815.jpg); */
+    
 }
 
 #portfolio img{
@@ -244,7 +245,7 @@ body{
     background: url(Images/pexels-photo-459225.jpeg);
     display: block;
     margin: auto;
-    
+    border-radius: 25%;
 }
 
 #portfolio .section-1at, #portfolio .section-1bt{
@@ -259,11 +260,13 @@ body{
 
 #portfolio .section-1bt p, #portfolio .section-1at p{
     text-align: left;
+    
 }
 
 .flip-container {
     background-color: transparent;
     perspective: 1000px;
+    
 }
 
 .flip-inner {
@@ -277,6 +280,7 @@ body{
     height: 300px;
     display: block;
     margin: auto;
+    border-radius: 25%;
 }
 
 .flip-front{

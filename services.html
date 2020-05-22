@@ -1,5 +1,5 @@
 <!-- ToDo List -->
-<!-- add JS form functionality to forms -->
+<!-- add JS form functionality to forms, make form divs response to webpage size-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -57,11 +57,137 @@
     </header>
     <!-- Form -->
     <section id="serviceLinks">
-        <button class="tabBar" onclick="openPage('Private', this, 'rgb(255, 101, 101)')" id="defaultService">Private Chef</button>
-        <button class="tabBar" onclick="openPage('Direct', this, 'rgb(63, 170, 63)')" >Private Call</button>
-        <button class="tabBar" onclick="openPage('Contact', this, 'rgb(97, 97, 253)')">Contact</button>
-        <button class="tabBar" onclick="openPage('Quote', this, 'rgb(255, 197, 88)')">Special Quote</button>
+        <button class="tabBar" onclick="openPage('Private', this, 'rgb(255, 101, 101)')" >Private Chef</button>
+        <button  class="tabBar" onclick="openPage('Direct', this, 'rgb(63, 170, 63)')" id="defaultService">Private Call</button>
+        <button  class="tabBar" onclick="openPage('Contact', this, 'rgb(97, 97, 253)')">Contact Us</button>
+        <!-- turn on for 4 tabs -->
+        <!-- <button class="tabBar" onclick="openPage('Quote', this, 'rgb(255, 197, 88)')">Special Quote</button> -->
+        <!-- Private Chef -->
         <div id="Private" class="serviceContent">
+            <div class="serviceContainer" id="privForm">
+                <h3>In need of a private chef for a simple meal or larger event? Let us know what you need and get a free quote!</h3>
+                <p>Estimates are not exact amounts and subject to change based on needs/alterations</p>
+                <form action="" class="privChef">
+                    <select>
+                        <option value="breakfast">breakfast</option>
+                        <option value="brunch">brunch</option>
+                        <option value="lunch">lunch</option>
+                        <option value="dinner">dinner</option>
+                        <option value="event">event</option>
+                    </select>
+                    <label for=""> What type of meal? 
+                    </label>
+                    <div class="tooltip"><i class="far fa-question-circle"></i>
+                        <span class="tooltiptext">*Events are: corporate, catering, gatherings with greater than 4 adults | 6 children / 8 adults.</span>
+                      </div>
+                    
+                    <br>
+                    <p>Person(s) we will serve?</p>
+                    <input type="number" min="0" max="99" value="1" >
+                    <label for="">Adults </label>
+                    <input type="number" min="0" max="99" value="0">
+                    <label for="">Children</label>
+                    <p>Please specify the type of entrees you need</p>
+                    <input type="checkbox">
+                    <label for="">Appetizer</label>
+                    <input type="checkbox">
+                    <label for="">Salad / Soup</label>
+                    <input type="checkbox">
+                    <label for="">Specialty Sides</label>
+                    <input type="checkbox">
+                    <label for="">Main Entre</label>
+                    <input type="checkbox">
+                    <label for="">Desert</label>
+
+                    <p>What date and time do you require? Times must be at least a week in advance!</p>
+                    <input type="date" value="">
+                    <input type="time">
+
+                    <p>Please let us know more about the cooking services our chef can provide</p>
+                    <textarea name="" id="" cols="75" rows="10" placeholder="Please enter the specifics here..."></textarea>
+                    <br>
+                    <p>Please enter your email and/or phone number.</p>
+                    <input type="email" placeholder="janedoe@email.com" id="privEmail" required>
+                    <input type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="privTel">
+                    <br>
+                    <p>Please be sure to have at least 1 adult/child selected, an entre and your email before sumbitting!</p>
+                    <button type="submit" onclick="privSubmit()" id="privChefSubmit">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Private Call -->
+        <div id="Direct" class="serviceContent">
+            <div class="serviceContainer" id="callForm">
+                <h3>In need of direct help and don't have an account? Schedule a private chat with our chef!</h3>
+                <p>Please let us know how our chef can fulfill your needs.</p>
+                <form action="" class="">
+                    <input type="checkbox">
+                    <label for="">Meal with what's in the fridge</label>
+                    <br>
+                    <input type="checkbox">
+                    <label for="">"I'm out of ideas!"</label>
+                    <br>
+                    <input type="checkbox">
+                    <label for="">Video Step-By-Step Guidence</label>
+                    <br>
+                    <input type="checkbox">
+                    <label for="">"Why isn't it turning out like the recipe?"</label>
+                    <br>
+                    <input type="checkbox">
+                    <label for="">"I want to impress them!"</label>
+                    <p>Please let us know more about your needs.</p>
+                    <textarea name="" id="" cols="75" rows="10" placeholder="Please enter the specifics here..."></textarea>
+                    <p>Please specify the type of entrees the chef will focus on.</p>
+                    <input type="checkbox">
+                    <label for="">Appetizer</label>
+                    <input type="checkbox">
+                    <label for="">Salad / Soup</label>
+                    <input type="checkbox">
+                    <label for="">Specialty Sides</label>
+                    <input type="checkbox">
+                    <label for="">Main Entre</label>
+                    <input type="checkbox">
+                    <label for="">Desert</label>
+
+                    <p>What times are you available to be contacted?</p>
+                    <input type="time" size="8"> <label for=""> to </label>
+                    <input type="time" size="8">
+                    <br>
+                    <input type="text" placeholder="Monday" size="8"> to <input type="text" placeholder="Friday" size="8">
+                    <p>Please enter your email and/or phone number.</p>
+                    <input type="email" placeholder="janedoe@email.com" id="privChefEmail" required>
+                    <input type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <br>
+                    <br>
+                    <button type="submit" value="Submit" onclick="callSubmit()" id="">Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Contact -->
+        <div id="Contact" class="serviceContent"  >
+            <div class="serviceContainer" id="contactForm">
+                <h3>If there is anything else you'd like to inquire or wished to contact us about, please enter away!</h3>
+                <form action="" class="privContact">
+                    <p>Please enter contact info</p>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <p></p>
+                    <input type="email" placeholder="janedoe@email.com" id="privChefEmail" required>
+                    <input type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <p></p>
+                    <textarea name="" id="" cols="75" rows="10" placeholder="Please enter the specifics here..."></textarea>
+                    <br>
+                    <p><p>
+                    <button type="submit" value="Submit" onclick="contactSubmit()" id="">Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Special Quote *uncomment tab and switch css to view -->
+        <div id="Quote" class="serviceContent">
             <div class="serviceContainer">
                 <h3>In need of a private chef for a simple meal or larger event? Let us know what you need and get a free quote!</h3>
                 <p>Estimates are not exact amounts and subject to change based on needs/alterations</p>
@@ -110,38 +236,14 @@
                     <br>
                     <p>Please be sure to have at least 1 adult/child selected, an entre and your email before sumbitting!</p>
                     <input type="button" value="Submit" onclick="serviceSubmit()" id="privChefSubmit">
-                    
                 </form>
             </div>
-        </div>
-        <div id="Direct" class="serviceContent">
-            <h3>Consulting</h3>
-            <p>Some news this fine day!</p> 
-        </div>
-        <div id="Contact" class="serviceContent">
-            <h3>Contact</h3>
-            <p>Get in touch, or swing by for a cup of coffee.</p>
-        </div>
-        <div id="Quote" class="serviceContent">
-            <h3>About</h3>
-            <p>Who we are and what we do.</p>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    
-
-                    
-                </div>
-            </div>
-        </div>
     </section> 
     <!-- Footer -->
     <section id="footer">
         <div class="container">
             <div class="row center-xs center-sm start-md start-lg">
                 <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                    <!-- Change some items to p instead of li if they don't use icons -->
                     <div id="footer-about">
                         <h4>
                             About Us
@@ -406,3 +508,6 @@
             </div>
         </div>
     </section> -->
+
+    <!-- more tabs to tabBar -->
+    
