@@ -4,15 +4,15 @@ This is a WIP template for service based websites. Currently being designed arou
 
 ToDo List
 
-+Add JS functionality w/ Forkify API to sidemenus to update Recipe Search and enable favorites
-
-+Add JS functionality to update favorites on Account sidemenu and enable sort and search features
-
 +Create Service navlink and form for service quote/inquiries
 
 +Add section to Home Page featuring/connecting to client YouTube Channel or videos
 
 +Horizontal span animate of testimonial section *May expand to contain About link info
+
+5/24: version 0.2
+
+Had to organize for npm installs and to work on server with babel and webpack. Project scaled down due to issue integrating API. 
 
 5/18: version 0.1
 
