@@ -7,33 +7,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="css/style.main.css">
-        
     <link rel="stylesheet" href="css/flexboxgrid.css">
     <link rel="stylesheet" href="css/home.css">
     <script src="https://kit.fontawesome.com/721adb4787.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    
 
 </head>
-<body class="main-content">
+<body class="main-content" style="height: 4000px;">
     <!-- Header Nav Bar -->
     <header id="header" class="top">
         <div class="container">
             <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
-                <!-- Recipes Icon -->
-                <!-- Could be for Events the Chef plans linked to external links or videos. -->
-                <!-- <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                    <div class="container-left">
-                        <h3 id="left-icon">
-                            <button type="button" class="left-icon">
-                                <a href="#" data-drawer-trigger aria-controls="drawer-name-left" aria-expanded="false"><i class="fas fa-bars"> Events</i></a>    
-                            </button>
-                        </h3>
-                    </div>
-                </div> -->
                 <!-- Nav Page Links -->
-                <!-- Get the tabs on this line -->
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <nav id="navbar">
                         <ul>
@@ -42,9 +26,8 @@
                                     <a href="#" data-drawer-trigger aria-controls="drawer-name-left" aria-expanded="false"><i class="fas fa-bars"> Events</i></a>    
                                 </button>
                             </li>
-                            <li class="current"><a href="">Home</a></li>
+                            <li ><a href="" class="current">Home</a></li>
                             <li><a href="services.html">Services</a></li>
-                            <!-- <li><a href="recipes.html">Recipes</a></li> -->
                             <li><a href="about.html">Gallery</a></li>
                             <li id="right-icon">
                                 <button type="button" class="right-icon">
@@ -54,17 +37,6 @@
                         </ul>
                     </nav>
                 </div>
-                <!-- Account Icon -->
-
-                <!-- <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                    <div id="right-icon">
-                        <h3 id="right-icon">
-                            <button type="button" class="right-icon">
-                                <a href="#" data-drawer-trigger aria-controls="drawer-name" aria-expanded="false"><i class="fas fa-user-alt"> Account</i></a>    
-                            </button>
-                        </h3> 
-                    </div>
-                </div> -->
             </div>
         </div>
     </header>
@@ -87,19 +59,22 @@
         </div>
     </section>
     <!-- Slideshow Carousel -->
-    <section class="carousel-container">
+    <section class="carousel-container" id="carousel2">
         <div class="slider" id="slider">
 
             <!-- You can embed whatever you want insider this and provide custom styling -->
             <!-- Add text to each slide, slow down the transition, change transition to opacity instead of left to right. -->
             <div class="slider-item">
               <img src="Images/standing-person-using-fork-and-knife-on-preparing-food-2814828.jpg">
-              <p>test text</p>
             </div>
           
             <div class="slider-item">
               <img src="Images/chef-preparing-vegetable-dish-on-tree-slab-1267320.jpg">
             </div>
+
+            <div class="slider-item">
+                <img src="Images/standing-person-using-fork-and-knife-on-preparing-food-2814828.jpg">
+              </div>
           
             <div class="slider-item">
               <img src="Images/pexels-photo-2159095.jpeg">
@@ -123,7 +98,6 @@
           </div>
     </section>
     <!-- Portfolio (scroll animations TBI) -->
-    <!-- Change CSS to toggle a hover class to cause the effect instead of a mouse hover. Add JS to add class on scroll height or position. -->
     <section id="portfolio">
         <div class="container">
             <div class="row center-xs center-sm center-md center-lg">
@@ -142,7 +116,7 @@
                     <div class="flip-container">
                         <div class="flip-inner">
                             <div class="flip-front" >
-                                <img src="Images/apps.46943.9007199266245148.65716085-8f7e-40af-9dd6-34b7bc30c6dd.png" alt="image of work">
+                                <img src="Images/red-apples-in-brown-wooden-bucket-220911.jpg" alt="image of work">
                             </div>
                         </div>
                     </div>
@@ -152,7 +126,7 @@
                     <div class="flip-container">
                             <div class="flip-inner">
                                 <div class="flip-front">
-                                    <img src="Images/apps.46943.9007199266245148.65716085-8f7e-40af-9dd6-34b7bc30c6dd.png" alt="image of work"> 
+                                    <img src="Images/red-apples-in-brown-wooden-bucket-220911.jpg" alt="image of work"> 
                                 </div>
 
                             </div>
@@ -193,7 +167,7 @@
                     <div class="flip-container">
                         <div class="flip-inner">
                             <div class="flip-front" >
-                                <img src="Images/apps.46943.9007199266245148.65716085-8f7e-40af-9dd6-34b7bc30c6dd.png" alt="image of work">
+                                <img src="Images/red-apples-in-brown-wooden-bucket-220911.jpg" alt="image of work">
                             </div>
                         </div>
                     </div>
@@ -203,7 +177,7 @@
                     <div class="flip-container">
                             <div class="flip-inner">
                                 <div class="flip-front">
-                                    <img src="Images/apps.46943.9007199266245148.65716085-8f7e-40af-9dd6-34b7bc30c6dd.png" alt="image of work"> 
+                                    <img src="Images/red-apples-in-brown-wooden-bucket-220911.jpg" alt="image of work"> 
                                 </div>
 
                             </div>
@@ -227,32 +201,42 @@
         </div>
     </section> 
     <!-- Developer(s) &/|| Staff -->
-    <!-- TD: Background could be image of chef and then have a textbox to the side. *How do I make it mobile responive? Transparency? -->
-    <!-- Might extend with about info as About.html will be used for a gallery -->
-    <!-- Highlight the testimonal box when mouse hovers -->
     <section id="people">
         <div class="container">
             <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <div id="staff-img">
                         <img src="Images/cheerful-young-multiethnic-couple-hugging-while-walking-3973865.jpg" alt="image of dev/staff">
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <div class="row start-xs center-sm start-md start-lg">
-                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                             <div id="staff-info">
                                 <h3>
-                                    Title of person: Dr. Jim Bob Von Dyke
+                                    Jonas Wright Butcher 
                                 </h3>
                                 <h4>
-                                    credentials: University of Scoobydoo Inc at Manchester Elvington University
+                                    Head Chef & Ceo J.W.Butcher Private Chef Services with Over Two Decades of Professional Chef Experience. 
                                 </h4>
                                 <p>
-                                    Coding Langugues: HTML, CSS, JavaScript (ES5/ES2016/ES6), React.js, Angular.js
+                                    Delacacies: 
+                                    <ul>
+                                        <li>American</li>
+                                        <li>Asian Continent</li>
+                                        <li>
+                                            Island Traditonal
+                                        </li>
+                                        <li>
+                                            European Classics
+                                        </li>
+                                        <li>
+                                            Early 16th - modern Home Recipes
+                                        </li>
+                                    </ul>
                                 </p>
                                 <p>
-                                    Backend Structures: Python, Machine Leaning, Ruby on Rails,      
+                                    Personal Statement: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores vitae autem aliquid voluptate sint eaque provident, unde in labore ducimus adipisci ab magnam! Error ad quos, non architecto iure consectetur?
                                 </p>
                                 <br>
                                 <h4>
@@ -337,11 +321,11 @@
                 <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                     <div id="footer-sub&media">
                         <h4>
-                            Subcribe & Social Media
+                            Professional Resume
                         </h4>
                         <ul id="footer-sub&media-list">
-                            <p><i class="fab fa-github-square"> Check the latest project on GitHub!</i></p>
-                            <p><i class="fab fa-linkedin"> See my experience on LinkedIn</i> </p> 
+                            <p><a href="https://github.com/JoshuaDSidell" style="font-size: 24px;"><i class="fab fa-github-square"></i></a> Check out the latest project!</p>
+                            <p><a href="https://www.linkedin.com/" style="font-size: 24px;"><i class="fab fa-linkedin"></i></a> See my experience on LinkedIn </p> 
                             <p id="subby">Subscribe to our Newsletter!</p>
                             <form action="">
                             <input type="text" name="email" placeholder="Enter Email">
@@ -365,7 +349,7 @@
               </div>
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <p>
-                    <span>Check out our Social Media! | <i class="fab fa-facebook-square"></i> | <i class="fab fa-twitter-square"></i> | <i class="fab fa-instagram-square"></i> | 
+                    <span>Check out our Social Media! | <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a> | <a href="https://twitter.com/"> <i class="fab fa-twitter-square"></i> </a> | <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a> | 
                 </p> </span>
               </div>
             </div>
@@ -555,11 +539,10 @@
         </div>
     </section>
 
-    
-    <!-- <script src="js/controller.js"></script> -->
-    <script src="../dist/build/controller.bundle.js"></script>
-    <script src="js/script.main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../dist/build/controller.bundle.js"></script>
+
+    
 
 </body>
 </html>

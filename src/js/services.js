@@ -13,22 +13,6 @@ serviceElements = {
     contactTel: document.getElementById('contactTel'),
   };
   
-  drawerElements = {
-  
-  }
-  
-  function addFavRecipe() {
-    //event listener for button click
-  
-    //records divID 
-  
-    //insertHTML's divcontents into other fav bar in a toggle. When it's selected it's present.
-  
-    //store the selection across the different pages
-  
-  
-  }
-  
   
   //random confirm code generator for testing purposes
   function randomConfirmCode() {
