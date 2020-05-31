@@ -2,6 +2,13 @@ console.log(`hello world`);
 
 //-------------------------------------------
 
+//Popup when subscribe submit is pressed
+
+$("#thankSubmit").submit(function(e){
+  alert(`Test`)
+  e.preventDefault();
+});
+
 //flips protfolio section content when in view
 isScrolledIntoView = function(elem) {
   var docViewTop = $(window).scrollTop();

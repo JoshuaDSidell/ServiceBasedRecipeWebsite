@@ -9,13 +9,16 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/flexboxgrid.css">
     <link rel="stylesheet" href="css/home.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Charm&family=Cinzel+Decorative&family=Cormorant+SC&family=Girassol&family=Kalam:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+
+
     <script src="https://kit.fontawesome.com/721adb4787.js" crossorigin="anonymous"></script>
 
 </head>
 <body class="main-content" style="height: 4000px;">
     <!-- Header Nav Bar -->
-    <header id="header" class="top">
-        <div class="container">
+        <div class="container" id="header">
             <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
                 <!-- Nav Page Links -->
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -23,7 +26,7 @@
                         <ul>
                             <li id="left-icon">
                                 <button type="button" class="left-icon">
-                                    <a href="#" data-drawer-trigger aria-controls="drawer-name-left" aria-expanded="false"><i class="fas fa-bars"> Events</i></a>    
+                                    <a href="#" data-drawer-trigger aria-controls="drawer-name-left" aria-expanded="false"><i class="fas fa-bars"><span> Events</span> </i></a>    
                                 </button>
                             </li>
                             <li ><a href="" class="current">Home</a></li>
@@ -31,7 +34,7 @@
                             <li><a href="about.html">Gallery</a></li>
                             <li id="right-icon">
                                 <button type="button" class="right-icon">
-                                    <a href="#" data-drawer-trigger aria-controls="drawer-name" aria-expanded="false"><i class="fas fa-user-alt"> Account</i></a>    
+                                    <a href="#" data-drawer-trigger aria-controls="drawer-name" aria-expanded="false"><span>Account </span><i class="fas fa-user-alt"></i></a>    
                                 </button>
                             </li>
                         </ul>
@@ -39,15 +42,14 @@
                 </div>
             </div>
         </div>
-    </header>
     <!-- Banner (animated slideshow TBI) -->
     <section id="banner">
         <div class="container">
             <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
-                <div class="col-xs-10 col-sm-10 col-md-8 col-lg-8 banner_text">
-                    <h3 id="banner_text">
+                <div class="col-xs-10 col-sm-9 col-md-7 col-lg-6 banner_text">
+                    <h2 id="banner_text">
                          <img style="vertical-align:middle" src="Images/567611ff-d173-4ab2-9fca-eda4dfe03293_200x200.png" alt=""> Private Chef
-                    </h3>
+                    </h2>
                     <p>
                         Welcome to the Kitchen of Boston's Top Startup Chef.
                     </p>
@@ -206,19 +208,26 @@
             <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <div id="staff-img">
+                        <h3>
+                            Jonas Wright Butcher 
+                        </h3>
+                        
                         <img src="Images/cheerful-young-multiethnic-couple-hugging-while-walking-3973865.jpg" alt="image of dev/staff">
+                        <h4>
+                            Head Chef & Ceo J.W.Butcher Private Chef Services 
+                        </h4>
+                        <h4>
+ Over Two Decades of Professional Chef Experience. 
+                        </h4>
+                        <h4>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                        </h4>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <div class="row start-xs center-sm start-md start-lg">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                             <div id="staff-info">
-                                <h3>
-                                    Jonas Wright Butcher 
-                                </h3>
-                                <h4>
-                                    Head Chef & Ceo J.W.Butcher Private Chef Services with Over Two Decades of Professional Chef Experience. 
-                                </h4>
                                 <p>
                                     Delacacies: 
                                     <ul>
@@ -236,7 +245,7 @@
                                     </ul>
                                 </p>
                                 <p>
-                                    Personal Statement: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores vitae autem aliquid voluptate sint eaque provident, unde in labore ducimus adipisci ab magnam! Error ad quos, non architecto iure consectetur?
+                                    Personal Statement: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores vitae autem aliquid voluptate sint eaque provident, unde in labore ducimus adipisci ab magnam! Error ad quos, non architecto iure consectetur? in labore ducimus adipisci ab magnam! Error ad quos, non architecto iure consectetur?in labore ducimus adipisci ab magnam! Error ad quos, 
                                 </p>
                                 <br>
                                 <h4>
@@ -280,33 +289,34 @@
     <!-- Footer -->
     <section id="footer">
         <div class="container">
-            <div class="row center-xs center-sm start-md start-lg">
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            <div class="row center-xs center-sm center-md center-lg ">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <!-- Change some items to p instead of li if they don't use icons -->
                     <div id="footer-about">
                         <h4>
                             About Us
                         </h4>
                         <ul id="footer-about-list">
-                            <li><i class="fas fa-mobile-alt">   888-888-8888</i></li>
-                            <li><i class="fas fa-at">  rubadubdub@tubnetscape.net</i></li>
-                            <li><i class="fas fa-map-marked-alt">  Union City, CA</i></li>
+                            <li><i class="fas fa-mobile-alt"></i><label>888-888-8888</label></li>
+                            <li><i class="fas fa-at"></i><label>rubadubdub@tubnetscape.net</label></li>
+                            <li><i class="fas fa-map-marked-alt"></i><label> Boston, MA</label>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div id="footer-faq">
                         <h4>
                             Questions? FAQ!
                         </h4>
                         <ul id="footer-faq-list">
-                            <p>Why use (business name)?</p>
-                            <p>What kind of clients do we have?</p>
-                            <p>How much are your services?</p>
+                            <p>Lorem ipsum dolor sit amet </p>
+                            <p>Lorem ipsum dolor sit amet </p>
+                            <p>Lorem ipsum dolor sit amet </p>
                         </ul>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                <!-- <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                     <div id="footer-service">
                         <h4>
                             Services
@@ -317,19 +327,19 @@
                             <p>Assistance on current project</p>
                         </ul>
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                </div> -->
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div id="footer-sub&media">
-                        <h4>
-                            Professional Resume
+                        <h4 style="margin-bottom: 0px;">
+                            Professional
                         </h4>
                         <ul id="footer-sub&media-list">
-                            <p><a href="https://github.com/JoshuaDSidell" style="font-size: 24px;"><i class="fab fa-github-square"></i></a> Check out the latest project!</p>
-                            <p><a href="https://www.linkedin.com/" style="font-size: 24px;"><i class="fab fa-linkedin"></i></a> See my experience on LinkedIn </p> 
+                            <p style="margin-bottom: 0px; margin-top: 0px;"><a href="https://github.com/JoshuaDSidell" style="font-size: 24px;"><i class="fab fa-github-square"></i></a> Checkout my GitHub</p>
+                            <p style="margin-top: 0px;"><a href="https://www.linkedin.com/" style="font-size: 24px;"><i class="fab fa-linkedin"></i></a> See me on LinkedIn! </p> 
                             <p id="subby">Subscribe to our Newsletter!</p>
-                            <form action="">
-                            <input type="text" name="email" placeholder="Enter Email">
-                            <button type="submit" name="button">
+                            <form action=""id="thankSubmit">
+                            <input id="thanksInput" type="text" name="email" placeholder="Enter Email" required>
+                            <button id=""type="submit" name="button">
                                 Submit
                             </button>
                             </form>
@@ -340,23 +350,22 @@
             </div>
         </div>
     </section>
-    <!-- Copyright (may put social media icons here) -->
+    <!-- Copyright -->
     <footer id="copyright">
         <div class="container">
-            <div class="row center-xs center-sm center-md center-lg">
+            <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <p id="copyright-p">Copyright &copy; 2020 | Joshua Sidell</p>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <p>
-                    <span>Check out our Social Media! | <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a> | <a href="https://twitter.com/"> <i class="fab fa-twitter-square"></i> </a> | <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a> | 
+                    <span><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a> | <a href="https://twitter.com/"> <i class="fab fa-twitter-square"></i> </a> | <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a> | Check out our Social Media!
                 </p> </span>
               </div>
             </div>
           </div>
     </footer>
     <!-- Fixed Icons -->
-    <!-- have it only visible at the slider div -->
     <section>
         <div id="return-top">
             <a href="#top"><img src="Images/iconfinder_arrow-up-01_186407.png" alt=""></a>

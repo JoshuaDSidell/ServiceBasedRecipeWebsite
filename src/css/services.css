@@ -1,9 +1,40 @@
+label{
+  font-family: 'Cormorant SC', serif;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+span{
+  font-family: 'Open Sans', sans-serif; 
+  letter-spacing: 1px;
+
+}
+
+@media (max-width: 556px) {
+  #navbar li, #navbar a, #navbar i, #header span, #left-icon a, #right-icon a {
+      font-size: 12px;
+      padding-left: 3.5px;
+      padding-right: 4.10px;
+  }
+  
+}
+
 /* Style tab links */
 
+.containerS {
+  width: 100%;
+  margin: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+
+}
+
 #serviceLinks{
-    margin-top: 56px;
+    margin-top: 57px;
     box-sizing: border-box;
-    height: 900px;
+    height: 1000px;
+    width: 100%;
+    margin-bottom: 250px;
 }
 
 .tabBar {
@@ -33,15 +64,20 @@
     color: white;
     display: none;
     padding: 100px 20px;
-    height: 700px;
+    height: 1050px;
     
   }
   
-  #Private {background-color: rgb(255, 101, 101);}
+  /* #Private {background-color: rgb(255, 101, 101);}
   #Direct {background-color: rgb(63, 170, 63);}
-  /* #Direct {background: url(Images/board-bunch-cooking-food-349609.jpg);} */
+
   #Contact {background-color: rgb(97, 97, 253);}
-  #Quote {background-color: rgb(255, 197, 88);}
+  #Quote {background-color: rgb(255, 197, 88);} */
+
+
+  #Private {background: url(../Images/board-bunch-cooking-food-349609.jpg);}
+  #Direct {background: url(../Images/board-bunch-cooking-food-349609.jpg);}
+  #Contact {background: url(../Images/board-bunch-cooking-food-349609.jpg);}
 
 @media (max-width: 783px){
     #serviceLinks{
@@ -51,7 +87,7 @@
 
 @media (min-width: 786px){
     #serviceLinks{
-        margin-top: 47px;
+        margin-top: 57px;
     }
 }
 
@@ -64,19 +100,25 @@
 .serviceContainer{
     display: block;
     text-align: center;
-    background: wheat;
+    background: rgba(255, 255, 255, 0.534);
     color: black;
     line-height: 150%;
     padding: 10px;
     padding-bottom: 20px;
-    width: 900px;
+    width: fit-content;
     margin: auto;
     border-radius: 1.5em;
 }
 
+@media (max-width: 870px){
+  .serviceContainer{
+    width: auto;
+  }
+}
+
 .serviceContainer > h3 {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Private Chef Tab */
@@ -100,7 +142,7 @@
     position: absolute;
     z-index: 1;
     bottom: 100%;
-    left: 50%;
+    right: 50%;
     margin-left: -60px;
   }
   
@@ -109,6 +151,17 @@
   }
 
 /* Private Call */
+
+.privCallContainer{
+  padding-left: 35%;
+  text-align: left;
+}
+
+@media (max-width: 375px){
+  .privCallContainer{
+    padding-left: 5%;
+  }
+}
 
 /* Contact */
 
