@@ -1,14 +1,18 @@
-A WIP Project for Service based usage for Recipes
+A simple front end demo using HTML, CSS and JS for a mock up porfiolio for a private chef that offers services. The idea is to have everying centered, streamline and responsive between 1080p to 4k displays. 
 
-This is a WIP template for service based websites. Currently being designed around a website for chefs / online recipe guide. Elements such as selections on the navbar, images and project name subject to change as project progresses.
+The project took around 3 weeks to complete with 1 week put into making sure the webpage was mobile friendly. Works in FireFox, Safari and Chrome. The latter browser was used primarily during development. 
 
-ToDo List
+Flexbox, jquery, and animate on scroll (aos) were major tools for the overall look. and the JS is compiled with webpack and babel. Images pulled from Pexels free to use. 
 
-+Create Service navlink and form for service quote/inquiries
+There are still features I could impliment like user auth, and more refinsed drawers, but to keep things simple the current version should have no issue with other images or videos. 
 
-+Add section to Home Page featuring/connecting to client YouTube Channel or videos
+---------------------
 
-+Horizontal span animate of testimonial section *May expand to contain About link info
+6/1 Version 0.3
+
+*At this time future additions or revisions are TBD.  
+
+The front end website is as complete as I'd want it. This version serves as a demo of how the website would look and function. It's more or less ready to be used less some backend features of the Account tab and different links/areas footer and services html. 
 
 5/24: version 0.2
 

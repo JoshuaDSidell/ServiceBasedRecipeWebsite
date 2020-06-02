@@ -44,10 +44,10 @@ $(document).scroll(function () {
 
 
 //DEBUG - Show scroll position
-$(window).scroll(function (event) {
-  var scroll = $(window).scrollTop();
-  console.log(scroll);
-});
+// $(window).scroll(function (event) {
+//   var scroll = $(window).scrollTop();
+//   console.log(scroll);
+// });
 
 
 
@@ -616,5 +616,4 @@ var drawer = function () {
 };
 
 drawer();
-
 console.log(`goodbye world`);
