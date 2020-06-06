@@ -14,7 +14,7 @@ span{
   #navbar li, #navbar a, #navbar i, #header span, #left-icon a, #right-icon a {
       font-size: 12px;
       padding-left: 3.5px;
-      padding-right: 4.10px;
+      /* padding-right: 4.10px; */
   }
   
 }
